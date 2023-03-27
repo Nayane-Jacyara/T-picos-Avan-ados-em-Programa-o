@@ -6,7 +6,7 @@ def soma(x, y):
 
 numeros = [6, 75, 9, 30]
 soma_total = reduce(soma, numeros)
-print(soma_total) 
+print("soma_total:",soma_total)
 
 #Composição de funções
 
@@ -18,7 +18,7 @@ alunos = [{'nome': 'Julia', 'nota': 10},
 
 aprovados = list(filter(lambda x: x['nota'] >= 7, alunos))
 
-print(aprovados)
+print("Aprovados:",aprovados)
 
 
 # Imutabilidade
@@ -27,14 +27,14 @@ numeros = [5, 12, 16, 20]
 
 new_numeros = list(map(lambda x: x * 2, numeros))
 
-print(numeros) 
-print(new_numeros)
+print("numeros:",numeros) 
+print("new_numeros:",new_numeros)
 #Funções puras
 
 lista = [-10, 32, -44, 64, -25]
 
 numeros_positivos = list(filter(lambda x: x > 0, lista))
-print(numeros_positivos)
+print("numeros_positivos:",numeros_positivos)
 
 # Recursão
 
@@ -43,7 +43,7 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
-print(factorial(3))
+print("factorial:",factorial(3))
 
 # Currying
 
